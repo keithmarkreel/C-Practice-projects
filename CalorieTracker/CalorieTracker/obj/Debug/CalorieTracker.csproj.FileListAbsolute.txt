@@ -1,0 +1,7 @@
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\bin\Debug\CalorieTracker.exe
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\bin\Debug\CalorieTracker.exe.config
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\obj\Debug\CalorieTracker.csproj.AssemblyReference.cache
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\obj\Debug\CalorieTracker.csproj.CoreCompileInputs.cache
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\obj\Debug\CalorieTracker.exe
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\obj\Debug\CalorieTracker.pdb
+D:\Projects\C#\C3\CalorieTracker\CalorieTracker\bin\Debug\CalorieTracker.pdb
