@@ -1,0 +1,15 @@
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.AssemblyInfoInputs.cache
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.AssemblyInfo.cs
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.csproj.CoreCompileInputs.cache
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.sourcelink.json
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\bin\Debug\net10.0\PCparts.exe
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\bin\Debug\net10.0\PCparts.deps.json
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\bin\Debug\net10.0\PCparts.runtimeconfig.json
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\bin\Debug\net10.0\PCparts.dll
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\bin\Debug\net10.0\PCparts.pdb
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.dll
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\refint\PCparts.dll
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.pdb
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\PCparts.genruntimeconfig.cache
+D:\Projects\C#\C3\C# Practice projects\PCparts\PCparts\obj\Debug\net10.0\ref\PCparts.dll
