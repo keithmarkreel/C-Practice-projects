@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PCparts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed6ec448667a3e2bcdee239eb9b139c8832ad8ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3c9f60a24410f8b99705b51523e291599dbfec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PCparts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PCparts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

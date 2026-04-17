@@ -4,13 +4,13 @@ using System.Linq;
 
 namespace PCparts
 {
-    class Parts
+    class Parts //CLASS 
     {
-        public int partID { get; set; }
+        public int partID { get; set; } //FIELD
         public int partPrice { get; set; }
         public string partName { get; set; }
 
-        public Parts(int ID, int Price, string Name)
+        public Parts(int ID, int Price, string Name) //CONSTRUCTOR
         {
             partID = ID;
             partPrice = Price;
@@ -49,9 +49,26 @@ namespace PCparts
         {
             List<PCParts> ComputerParts = new List<PCParts>();
             ComputerParts.Add(new PCParts(1, 2000, "GTX 1080", "NVIDIA"));
-                foreach(PCParts hardware in ComputerParts)
+            ComputerParts.Add(new PCParts(2, 3000, "GTX 1080", "NVIDIA"));
+            ComputerParts.Add(new PCParts(3, 4000, "GTX 1080", "NVIDIA"));
+            ComputerParts.Add(new PCParts(4, 5000, "GTX 1080", "NVIDIA"));
+            ComputerParts.Add(new PCParts(5, 6000, "GTX 1080", "NVIDIA"));
+
+            IEnumerable<PCParts> PCPartsQuery = //LINQ
+                from PCPart in ComputerParts
+                where PCPart.partPrice > 3000
+                select PCPart;
+
+
+
+            foreach (PCParts hardware in ComputerParts)
             {
                 hardware.DeviceStatus();
+            }
+
+            foreach (PCParts computer in PCPartsQuery)
+            {
+                Console.WriteLine(computer.partPrice);
             }
             
 
