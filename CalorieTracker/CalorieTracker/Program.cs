@@ -33,6 +33,22 @@ namespace CalorieTracker
         }
     }
 
+    class Exercise
+    {
+        public string ExerciseName { get; set; }
+        public int Sets { get; set; }
+        public int Reps { get; set; }
+
+        public Exercise(string ExerciseN, int Set, int rep)
+        {
+            ExerciseName = ExerciseN;
+            Sets = Set;
+            Reps = rep;
+            
+        }
+
+    }
+
     class Parts
     {
         public string partName { get; set; }
@@ -58,6 +74,7 @@ namespace CalorieTracker
         static void Main()
         {
             List<Food> foodList = new List<Food>();
+            List<Exercise> exerciseList = new List<Exercise>();
             
             string optionInput = "test";
 
@@ -70,13 +87,19 @@ namespace CalorieTracker
                     GetCalories(foodList);
                     
                 }
-                else if (optionInput == "2")
+                if (optionInput == "2")
                 {
                    
-                    ViewCalories(foodList);
+                    DoExercise(exerciseList);
 
                 }
+                else
+                {
+                    ViewCalories(foodList, exerciseList);
+                }
             }
+
+
 
 
         }
@@ -86,7 +109,8 @@ namespace CalorieTracker
             Console.WriteLine("Welcome to the Calorie Tracker!");
             Console.WriteLine("Please select an option:");
             Console.WriteLine("1. Add Food and Calories");
-            Console.WriteLine("2. View Calories");
+            Console.WriteLine("2. Add Exercise");
+            Console.WriteLine("3. View Calories");
 
         }
         static void GetCalories(List <Food> foodList)
@@ -102,19 +126,50 @@ namespace CalorieTracker
           
         }
 
-        static void ViewCalories(List<Food> foodList)
+        static void ViewCalories(List<Food> foodList, List<Exercise> exerciseList)
         {
             int total = 0;
+            int CaloriesBurned = 0;
+            int totalCalories = 0;
+
             foreach(Food food in foodList)
             {
                 Console.WriteLine($"Food: {food.Name}, Calories: {food.Calories}");
                 total += food.Calories;
             }
-            Console.WriteLine("Total Calories: " + total);
+
+            foreach(Exercise Exer in exerciseList)
+            {
+                Console.WriteLine($"Exercise Name: {Exer.ExerciseName}, Sets: {Exer.Sets}, Reps: {Exer.Reps}");
+            }
+
+            foreach(Exercise exercise in exerciseList)
+            {
+                CaloriesBurned = CaloriesBurned + 100 * exercise.Sets;
+            }
+
+            totalCalories = total - CaloriesBurned;
+
+            Console.WriteLine("Calories Burned: " + CaloriesBurned);
+            Console.WriteLine("Total Calories Consumed: " + total);
+            Console.WriteLine("Actual Calories : " + totalCalories);
             Console.WriteLine("\n");
             Console.WriteLine("Press any to return to menu");
             Console.ReadLine();
         }
 
+
+        static void DoExercise(List<Exercise> exerciseList)
+        {
+            Console.WriteLine("Enter Exercise Name");
+            string ExerciseName = Console.ReadLine();
+            Console.WriteLine("Enter how many sets");
+            int Sets = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter how many reps");
+            int Reps = int.Parse(Console.ReadLine());
+
+            Exercise newEntry = new Exercise(ExerciseName, Sets, Reps);
+            exerciseList.Add(newEntry);
+        }
     }
-}
+}   
