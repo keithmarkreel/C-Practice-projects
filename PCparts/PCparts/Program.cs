@@ -54,10 +54,10 @@ namespace PCparts
             ComputerParts.Add(new PCParts(4, 5000, "GTX 1080", "NVIDIA"));
             ComputerParts.Add(new PCParts(5, 6000, "GTX 1080", "NVIDIA"));
 
-            IEnumerable<PCParts> PCPartsQuery = //LINQ
-                from PCPart in ComputerParts
-                where PCPart.partPrice > 3000
-                select PCPart;
+            IEnumerable<PCParts> PCPartsQuery = //LINQ PCPartsQuery contains the List of Data
+                from PCPart in ComputerParts    //PCPart is a variable created so PC
+                where PCPart.partPrice > 3000   //
+                select PCPart;                  //Program Basically Finds PCParts greater than 3000
 
 
 
