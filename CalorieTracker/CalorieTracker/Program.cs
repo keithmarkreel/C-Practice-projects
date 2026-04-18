@@ -138,7 +138,7 @@ namespace CalorieTracker
                 total += food.Calories;
             }
 
-            foreach(Exercise Exer in exerciseList)
+            foreach(Exercise Exer in exerciseList) //bruh
             {
                 Console.WriteLine($"Exercise Name: {Exer.ExerciseName}, Sets: {Exer.Sets}, Reps: {Exer.Reps}");
             }
